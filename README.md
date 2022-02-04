@@ -1,4 +1,4 @@
-# Mogoka - Mock Google Cloud API & Services
+# Mogoca - Mock Google Cloud API & Services
 
 <p align="center">
     <em>Mock Google Cloud API & Services</em>
