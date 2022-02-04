@@ -1,10 +1,10 @@
 PIPENV_RUN := pipenv run
 
 isort-src:
-	$(PIPENV_RUN) isort -rc ./mogoca
+	$(PIPENV_RUN) isort ./mogoca
 
 isort-docs:
-	$(PIPENV_RUN) isort -rc ./docs/src -o mogoca
+	$(PIPENV_RUN) isort ./docs/src -o mogoca
 
 format: isort-src isort-docs
 	$(PIPENV_RUN) black .
