@@ -5,7 +5,7 @@
 </p>
 
 [![build](https://github.com/hyahiaoui/mogoca/workflows/Build/badge.svg)](https://github.com/hyahiaoui/mogoca/actions)
-[![codecov](https://codecov.io/gh/hyahiaoui/mogoca/branch/master/graph/badge.svg)](https://codecov.io/gh/hyahiaoui/mogoca)
+[![codecov](https://codecov.io/gh/hyahiaoui/mogoca/branch/main/graph/badge.svg)](https://codecov.io/gh/hyahiaoui/mogoca)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=hyahiaoui/mogoca)](https://dependabot.com)
 [![PyPI version](https://badge.fury.io/py/mogoca.svg)](https://badge.fury.io/py/mogoca)
 
