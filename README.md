@@ -6,7 +6,6 @@
 
 [![build](https://github.com/hyahiaoui/mogoca/workflows/Build/badge.svg)](https://github.com/hyahiaoui/mogoca/actions)
 [![codecov](https://codecov.io/gh/hyahiaoui/mogoca/branch/main/graph/badge.svg)](https://codecov.io/gh/hyahiaoui/mogoca)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=hyahiaoui/mogoca)](https://dependabot.com)
 [![PyPI version](https://badge.fury.io/py/mogoca.svg)](https://badge.fury.io/py/mogoca)
 
 ---
@@ -31,6 +30,19 @@ After that, activate the virtual environment:
 
 ```bash
 pipenv shell
+```
+
+### Available commands
+
+You can check out the available commands, with their documentation, using
+
+```bash
+make help
+```
+or,
+
+```bash
+make
 ```
 
 ### Run unit tests
