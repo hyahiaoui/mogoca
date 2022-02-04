@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "mogoca"
+dist-name = "mogoca"
+author = "Houssame Yahiaoui"
+author-email = "houssame.yahiaoui@protonmail.com"
+home-page = "https://github.com/hyahiaoui/mogoca"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+]
+description-file = "README.md"
+requires-python = ">=3.9"
+requires = [
+]
+
+[tool.flit.metadata.requires-extra]
+
+[tool.flit.metadata.urls]
+Documentation = "https://hyahiaoui.github.io/mogoca/"

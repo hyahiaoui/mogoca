@@ -1,0 +1,25 @@
+site_name: Mogoka - Mock Google Cloud API & Services
+site_description: Mock Google Cloud API & Services
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: deep-orange
+
+repo_name: hyahiaoui/mogoca
+repo_url: https://github.com/hyahiaoui/mogoca
+edit_uri: ""
+
+markdown_extensions:
+  - markdown_include.include:
+      base_path: docs
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist
+
+nav:
+  - About: index.md
