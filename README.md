@@ -1,7 +1,7 @@
 # Mogoca - Mock Google Cloud API & Services
 
 <p align="center">
-    <em>Mock Google Cloud API & Services</em>
+    <em>In a nutshell, Mogoca is a library that allows your tests to easily mock out GCP Services.</em>
 </p>
 
 [![build](https://github.com/hyahiaoui/mogoca/workflows/Build/badge.svg)](https://github.com/hyahiaoui/mogoca/actions)
@@ -20,6 +20,16 @@
 **Source Code**: <a href="https://github.com/hyahiaoui/mogoca" target="_blank">https://github.com/hyahiaoui/mogoca</a>
 
 ---
+
+## Installation
+
+```bash
+pip install mogoka
+```
+
+## Usage
+
+*In progress*
 
 ## Development
 
