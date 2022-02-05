@@ -19,8 +19,25 @@ class FakeClient:
     Mocked implementation of Google Cloud Storage Client.
     """
 
-    def __init__(self):
+    def __init__(
+        self,
+        project=None,
+        credentials=None,
+        _http=None,
+        client_info=None,
+        client_options=None,
+    ):
         self._buckets = {}
+
+        self.project = project
+        self.credentials = credentials
+        self._http = _http
+        self.client_info = client_info
+        self.client_options = client_options
+
+    @classmethod
+    def create_anonymous_client(cls):
+        return cls()
 
     def bucket(self, bucket_name, user_project=None):
         return FakeBucket(client=self, name=bucket_name, user_project=user_project)
