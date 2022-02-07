@@ -22,6 +22,7 @@ pymdown-extensions = "*"
 bumpversion = "*"
 
 [packages]
+google-cloud-storage = "*"
 
 [requires]
 python_version = "3.9"
