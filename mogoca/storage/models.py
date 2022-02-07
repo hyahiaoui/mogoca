@@ -1,3 +1,4 @@
+from datetime import datetime
 from google.cloud import storage
 from google.cloud.exceptions import Conflict
 from google.cloud.storage._helpers import _validate_name
@@ -10,8 +11,10 @@ class FakeBucket:
 
     def __init__(self, client, name=None, user_project=None):
         self.name = _validate_name(name)
-        self._client = client
-        self._user_project = user_project
+        self.client = client
+        self.user_project = user_project
+        self.location = None
+        self.time_created = None
 
 
 class FakeClient:
@@ -45,14 +48,14 @@ class FakeClient:
     def create_bucket(
         self,
         bucket_or_name,
-        # requester_pays=None,
-        # project=None,
+        requester_pays=None,
+        project=None,
         user_project=None,
-        # location=None,
-        # predefined_acl=None,
-        # predefined_default_object_acl=None,
-        # timeout=60,
-        # retry=None,
+        location=None,
+        predefined_acl=None,
+        predefined_default_object_acl=None,
+        timeout=60,
+        retry=None,
     ):
         bucket_name = (
             bucket_or_name if isinstance(bucket_or_name, str) else bucket_or_name.name
@@ -68,6 +71,8 @@ class FakeClient:
             if isinstance(bucket_or_name, str)
             else bucket_or_name
         )
+        new_bucket.location = location
+        new_bucket.time_created = datetime.utcnow()
 
         self._buckets[bucket_name] = new_bucket
         return new_bucket
